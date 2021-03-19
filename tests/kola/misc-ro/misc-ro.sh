@@ -66,10 +66,11 @@ echo "ok have /etc/yum.repos.d"
 
 # check if RHEL version encoded in RHCOS build version matches /etc/os-release
 source /etc/os-release
-if [ "${RHEL_VERSION//.}" != "$(echo "${VERSION}" | awk -F "." '{print $2}')" ]; then
-  fatal "error: RHEL version does not match"
-fi
-echo "ok RHEL version matches"
+# Skip this since it's sourced from the server-ose
+#if [ "${RHEL_VERSION//.}" != "$(echo "${VERSION}" | awk -F "." '{print $2}')" ]; then
+#  fatal "error: RHEL version does not match"
+#fi
+#echo "ok RHEL version matches"
 
 # check that we are not including the kernel headers on the host
 # See:
