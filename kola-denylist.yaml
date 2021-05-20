@@ -5,6 +5,7 @@
   tracker: https://bugzilla.redhat.com/show_bug.cgi?id=1782026
   arches:
    - s390x
+   - aarch64
 - pattern: crio.base
   tracker: https://github.com/kubernetes/kubernetes/issues/87325
   arches:

@@ -30,6 +30,7 @@ repos:
   - rhel-8-fast-datapath
   - rhel-8-fast-datapath-aarch64
   - rhel-8-server-ose
+  - custom-kernel
 
 # We include hours/minutes to avoid version number reuse
 automatic-version-prefix: "48.84.<date:%Y%m%d%H%M>"
